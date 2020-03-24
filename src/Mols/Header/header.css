@@ -1,0 +1,19 @@
+.App-logo {
+  height: 4vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  margin: 0 auto;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.header {
+  width:100%;
+  background-color: RGBA(0,0,0,0.8);
+}

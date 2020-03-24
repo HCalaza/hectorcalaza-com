@@ -1,0 +1,30 @@
+.projectData{
+  margin-bottom:24px;
+  display:flex;
+  flex-wrap: wrap;
+}
+.imgConfigurator {
+  display: flex;
+  flex-direction: column;
+}
+.imgLoaderForm{
+  /* width: 284px; */
+}
+.imgForm{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 472px;
+
+}
+.buttonImg{
+ margin-bottom: 56px;
+}
+.projectInfo{
+  width: 432px;
+  padding-left: 8px;
+
+}
+.emptySpace{
+  width: 16px;
+}

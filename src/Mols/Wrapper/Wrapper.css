@@ -1,0 +1,26 @@
+.WrapperSM, .WrapperXL, .WrapperXXL{
+  padding-left: 16px;
+  padding-right: 16px;
+  border: 1px solid #C1C1C1;
+  border-radius: 16px;
+  background-color:#F2F2F2;
+}
+
+.WrapperSM{
+  width: 304px;
+}
+.WrapperXL{
+  width: 624px;
+}
+.WrapperXXL{
+  width: 944px;
+}
+
+.iconsRow {
+  display:flex;
+  height: 48px;
+  padding-top: 16px;
+  padding-bottom:8px;
+  justify-content: space-between;
+  align-content: space-between;
+}

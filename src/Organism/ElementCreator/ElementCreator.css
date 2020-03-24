@@ -1,0 +1,40 @@
+.sizeSM, .sizeXL, .sizeXXL{
+  padding-left: 16px;
+  padding-right: 16px;
+  border: 1px solid #F9AE06;
+  border-radius: 16px;
+  background-color:#F2F2F2;
+  outline: none;
+}
+.elementCreator{
+  height: 80px;
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.subtitleOne{
+  color:#F9AE06;
+}
+.sizeXL:hover, .sizeSM:hover, .sizeXXL:hover {
+  cursor: pointer;
+  background-color: #ebebeb;
+  border: 3px solid #F9AE06;
+  transition: 0.3s;
+}
+.sizeXL:active, .sizeSM:active, .sizeXXL:active {
+  background-color: #FCDA8D;
+
+}
+
+
+
+.sizeSM{
+  width: 304px;
+}
+.sizeXL{
+  width: 624px;
+}
+.sizeXXL{
+  width: 944px;
+}

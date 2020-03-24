@@ -1,0 +1,12 @@
+.imgBlock {
+  display:flex;
+  flex-wrap: wrap;
+  width:100%;
+}
+/*
+.leftSide{
+  width: 80%;
+}
+.rightSide {
+  width: 20%;
+} */

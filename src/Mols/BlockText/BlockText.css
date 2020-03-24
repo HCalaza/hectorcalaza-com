@@ -1,0 +1,22 @@
+
+.bodyText{
+  display:flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.titleOfBlock{
+  margin-left: 16px;
+  margin-right: 16px
+}
+.titleOfBlock >h3 {
+  color: #6b6b6b;
+}
+.block{
+  margin-left: 16px;
+  margin-right: 16px;
+  width: 448px;
+  display: inline-block;
+}
+.block > p {
+  color: #6b6b6b;
+}

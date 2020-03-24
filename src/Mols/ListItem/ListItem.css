@@ -1,0 +1,52 @@
+.mainList {
+  list-style: none;
+  /* padding-right: 24px; */
+}
+.bulletList{
+  width: 100%;
+}
+.bullet {
+  position: relative;
+  padding-left: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+/* Bullet */
+.bullet:before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: solid 3px #323232;
+  position: absolute;
+  left: -16px;
+  top:49px;
+  transform: translateY(-40%);
+  z-index: 1;
+}
+/* Line */
+.bullet:not(:last-child):after {
+  content: '';
+  width: 3px;
+  height: 100%;
+  background: #323232;
+  position: absolute;
+  top: 56px;
+  left: -7px;
+}
+.FstLine{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.companyName{
+  font-weight: bold;
+  width: 240px;
+
+}
+.dates{
+  width: 240px;
+  text-align: right;
+  padding-left: 24px;
+}

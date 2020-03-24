@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Martel+Sans&display=swap");
+
+
+.ButtonPrimaryStyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 196px;
+  height: 48px;
+  background-color: #F9AE06 ;
+  border-radius: 16px;
+  outline: none;
+}
+.ButtonPrimaryStyle:hover {
+  border: solid 1px #121212 ;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.ButtonPrimaryStyle:active{
+  background-color: #121212;
+}

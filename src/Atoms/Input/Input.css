@@ -1,0 +1,25 @@
+.inputForm{
+  width: 100%;
+}
+.InputField {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  border: 1px solid #6B6B6B;
+  background-color: rgba(255, 255, 255, 0.48);
+  outline: none;
+  border-radius: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.InputField:hover {
+  border: 3px solid #F9AE06;
+  cursor: text;
+  transition: 0.3s;
+}
+.InputField:focus {
+  border: 1px solid #F9AE06;
+}

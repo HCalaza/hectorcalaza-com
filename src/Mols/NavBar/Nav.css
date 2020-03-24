@@ -1,0 +1,48 @@
+
+.navBar {
+  background-color: black;
+  height: 80px;
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainMenu {
+  display:flex;
+  width: 100%;
+  padding-inline-start: 0px;
+}
+.menuElement{
+  list-style-type: none;
+  text-transform: uppercase;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  text-decoration: none;
+  font-family: 'Martel Sans', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+}
+.menuElement:hover {
+  background-color: #B67F05;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.menuElement *{
+  color: #F9AE06;
+}
+.menuElement:hover *{
+  color: black;
+}
+
+.menuElement:active {
+  background: #323232;
+  border: 1px solid #F9AE06;
+  box-sizing: border-box;
+}
+.menuElement:active *{
+  color: #F9AE06;
+}

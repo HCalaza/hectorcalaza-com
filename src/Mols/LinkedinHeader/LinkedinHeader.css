@@ -1,0 +1,31 @@
+
+.LinkedinBadgeSmall {
+  width: 100%;
+  height: 112px;
+  position: relative;
+  background-image: url("../../img/linkedinBG.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+
+
+}
+.LinkedinProfile{
+  width: 164px;
+  height: 164px;
+  background-color: #EBEBEB;
+  border: 4px solid #FFFFFF;
+  border-radius: 100%;
+  position:absolute;
+  z-index:1;
+  top: 32px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.linkedinPhoto{
+  border-radius: 100%;
+  width: 156px;
+  height: 156px;
+}
