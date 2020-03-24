@@ -1,13 +1,15 @@
 import React, { Component } from "react";
 import "./App.css";
 
-import ElementCreator from './Organism/ElementCreator/ElementCreator.js'
-import ImgWideLeft from "./Mols/ImgBlock/imgWideLeft.js"
 import FormBuilder from "./Organism/FormBuilder/FormBuilder.js"
+import TextBlockBuilder from "./Organism/TextBlockBuilder/TextBlockBuilder.js"
 
 
 
 {/*
+  import BlockText from "./Mols/BlockText/BlockText.js"
+  import ElementCreator from './Organism/ElementCreator/ElementCreator.js'
+  import ImgWideLeft from "./Mols/ImgBlock/imgWideLeft.js"
 import BulletBuilderXL from "./Organism/BulletBuilderXL/BulletBuilderXL.js"
 import LinkedinBuilderSM from "./Organism/LinkedinBuilderSM/LinkedinBuilderSM.js"
 import LinkedinBuilderXL from "./Organism/LinkedinBuilderXL/LinkedinBuilderXL.js"
@@ -19,7 +21,6 @@ import TextArea from "./Atoms/TextArea/TextArea.js"
 import Input from "./Atoms/Input/Input.js"
 import Nav from "./Mols/NavBar/Nav.js"
 import ListItem from "./Mols/ListItem/ListItem.js"
-import BlockText from "./Mols/BlockText/BlockText.js"
 import LinkedinHeader from "./Mols/LinkedinHeader/LinkedinHeader.js"
 */}
 
@@ -27,15 +28,17 @@ function App() {
   return (
     <div className="App">
       <div>
-        <ElementCreator size='XL' />
-        <ElementCreator size='SM' />
-        <FormBuilder wrapper='XL' />
-        <imgWideLeft/>
+        <FormBuilder />
+        <TextBlockBuilder />
       </div>
 
 
 
       {/*
+        <ElementCreator size='XL' />
+        <ElementCreator size='SM' />
+        <FormBuilder wrapper='XL' />
+        <imgWideLeft/>
         <LinkedinBadgeListItem />
         <FormBuilder />
         <ImgWideLeft />
