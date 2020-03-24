@@ -19,7 +19,7 @@
 .sizeXL:hover, .sizeSM:hover, .sizeXXL:hover {
   cursor: pointer;
   background-color: #ebebeb;
-  border: 3px solid #F9AE06;
+  /* border: 3px solid #F9AE06; */
   transition: 0.3s;
 }
 .sizeXL:active, .sizeSM:active, .sizeXXL:active {
