@@ -120,6 +120,21 @@ p{
 .ButtonSecondaryStyle:active > .ButtonTextSecondary {
   color: #121212;
 }
+.ButtonTextTertiary {
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-style: normal;
+  color: #F9AE06;}
+
+  .ButtonTertiaryStyle:hover >.ButtonTextTertiary{
+  text-decoration: underline;
+  text-decoration-color: #F9AE06;
+  }
+
 
 /* Formato iconos */
 .icon{

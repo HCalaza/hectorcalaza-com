@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Martel+Sans&display=swap");
+
+
+.ButtonTertiaryStyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 196px;
+  height: 48px;
+  background-color: rgba(255, 255, 255, 0.48);
+  border-color: none;
+  border-radius: 16px;
+  outline: none;
+}
+.ButtonTertiaryStyle:hover {
+  transition: 0.3s;
+  cursor: pointer;
+}
+.ButtonTertiaryStyle:active{
+  background-color: #FDE8BB;
+}

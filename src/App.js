@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import Accordion from './Organism/Accordion/Accordion.js'
+import ButtonTertiary from "./Atoms/Button/ButtonTertiary.js"
 
 
 
@@ -13,7 +14,6 @@ import LinkedinBuilderSM from "./Organism/LinkedinBuilderSM/LinkedinBuilderSM.js
 import LinkedinBuilderXL from "./Organism/LinkedinBuilderXL/LinkedinBuilderXL.js"
 import ImgWideLeft from "./Mols/ImgBlock/imgWideLeft.js"
 import Header from "./Mols/Header/header.js"
-import ButtonPrimary from "./Atoms/Button/ButtonPrimary.js"
 import ButtonSecondary from "./Atoms/Button/ButtonSecondary.js"
 import TextArea from "./Atoms/TextArea/TextArea.js"
 import Input from "./Atoms/Input/Input.js"

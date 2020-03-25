@@ -2,13 +2,10 @@ import React, { Component } from "react";
 import Collapse, { Panel } from 'rc-collapse';
 import './Accordion.css';
 import moreOpt from '../../img/ic/ic_moreOpt.svg';
+import close from '../../img/ic/ic_close.svg';
+import ButtonSecondary from "../../Atoms/Button/ButtonSecondary.js"
+import ButtonTertiary from "../../Atoms/Button/ButtonTertiary.js"
 
-
-const text = `
-  A dog is a type of domesticated animal.
-  Known for its loyalty and faithfulness,
-  it can be found as a welcome guest in many households across the world.
-`;
 
 function random() {
   return parseInt(Math.random() * 10, 10) + 1;
@@ -30,33 +27,57 @@ class Accordion extends React.Component {
   getItems() {
     const items = [];
     items.push(
-      <Panel header={<p className='subtitleOne'> Sección | Section | Partie </p>} key="1"extra={  <img src={moreOpt} className="icon" alt="close" />}>
+      <Panel header={<p className='subtitleOne'> Sección | Section | Partie </p>} key="1"extra={  <img src={moreOpt} className="icon" alt="moreOptions" />}>
         <Collapse>
-          <Panel header={<p className='subtitleOne'> Subsección</p>} key="1" id="header-test" extra={  <img src={moreOpt} className="icon" alt="close" />}>
+          <Panel header={<p className='subtitleOne'> Subsección</p>} key="1" id="header-test" extra={  <img src={moreOpt} className="icon" alt="moreOptions" />}>
+            <p className='subtitleOne'><a href="">Apartado</a></p>
+            <p className='subtitleOne'><a href="">Apartado</a></p>
+            <div className='buttonWrapper'>
+              <ButtonTertiary buttonText="Añadir apartado"/>
+            </div>
           </Panel>
         </Collapse>
         <Collapse>
-          <Panel header={<p className='subtitleOne'> Subsección</p>} key="2" id="header-test" extra={  <img src={moreOpt} className="icon" alt="close" />}>
+          <Panel header={<p className='subtitleOne'> Subsección</p>} key="2" id="header-test" extra={  <img src={moreOpt} className="icon" alt="moreOptions" />}>
+              <p className='subtitleOne'><a href="">Apartado</a></p>
+              <div className='buttonWrapper'>
+                <ButtonTertiary buttonText="Añadir apartado"/>
+              </div>
           </Panel>
         </Collapse>
+        <div className='buttonWrapper'>
+        <ButtonSecondary buttonText="Añadir subsección"/>
+        </div>
       </Panel>
     );
 
     items.push(
-      <Panel header={<p className='subtitleOne'> Sección | Section | Partie </p>} key="2"extra={  <img src={moreOpt} className="icon" alt="close" />}>
+      <Panel header={<p className='subtitleOne'> Sección | Section | Partie </p>} key="2"extra={  <img src={moreOpt} className="icon" alt="moreOptions" />}>
         <Collapse >
-          <Panel header={<p className='subtitleOne'> Subsección</p>} key="1" id="header-test" extra={  <img src={moreOpt} className="icon" alt="close" />}>
+          <Panel header={<p className='subtitleOne'> Subsección</p>} key="1" id="header-test" extra={  <img src={moreOpt} className="icon" alt="moreOptions" />}>
+            <div className='buttonWrapper'>
+              <ButtonTertiary buttonText="Añadir apartado"/>
+            </div>
           </Panel>
+          <div className='buttonWrapper'>
+          <ButtonSecondary buttonText="Añadir subsección"/>
+          </div>
         </Collapse>
       </Panel>
     );
 
 
     items.push(
-      <Panel header={<p className='subtitleOne'> Sección | Section | Partie </p>} key="3" extra={  <img src={moreOpt} className="icon" alt="close" />}>
+      <Panel header={<p className='subtitleOne'> Sección | Section | Partie </p>} key="3" extra={  <img src={moreOpt} className="icon" alt="moreOptions" />}>
         <Collapse>
-          <Panel header={<p className='subtitleOne'> Subsección</p>} key="1" id="header-test" extra={  <img src={moreOpt} className="icon" alt="close" />}>
+          <Panel header={<p className='subtitleOne'> Subsección</p>} key="1" id="header-test" extra={  <img src={moreOpt} className="icon" alt="moreOptions" />}>
+            <div className='buttonWrapper'>
+              <ButtonTertiary buttonText="Añadir apartado"/>
+            </div>
           </Panel>
+          <div className='buttonWrapper'>
+          <ButtonSecondary buttonText="Añadir subsección"/>
+          </div>
         </Collapse>
       </Panel>
     );
