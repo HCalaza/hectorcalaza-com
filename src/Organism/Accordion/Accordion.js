@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Collapse, { Panel } from 'rc-collapse';
-import 'rc-collapse/assets/index.css';
-import moreOpt from './img/ic/ic_moreOpt.svg';
+import './Accordion.css';
+import moreOpt from '../../img/ic/ic_moreOpt.svg';
 
 
 const text = `
@@ -14,7 +14,7 @@ function random() {
   return parseInt(Math.random() * 10, 10) + 1;
 }
 
-class Test extends React.Component {
+class Accordion extends React.Component {
   state = {
     time: random(),
     accordion: false,
@@ -31,8 +31,12 @@ class Test extends React.Component {
     const items = [];
     items.push(
       <Panel header={<p className='subtitleOne'> Sección | Section | Partie </p>} key="1"extra={  <img src={moreOpt} className="icon" alt="close" />}>
-        <Collapse defaultActiveKey="1">
+        <Collapse>
           <Panel header={<p className='subtitleOne'> Subsección</p>} key="1" id="header-test" extra={  <img src={moreOpt} className="icon" alt="close" />}>
+          </Panel>
+        </Collapse>
+        <Collapse>
+          <Panel header={<p className='subtitleOne'> Subsección</p>} key="2" id="header-test" extra={  <img src={moreOpt} className="icon" alt="close" />}>
           </Panel>
         </Collapse>
       </Panel>
@@ -40,7 +44,7 @@ class Test extends React.Component {
 
     items.push(
       <Panel header={<p className='subtitleOne'> Sección | Section | Partie </p>} key="2"extra={  <img src={moreOpt} className="icon" alt="close" />}>
-        <Collapse defaultActiveKey="1">
+        <Collapse >
           <Panel header={<p className='subtitleOne'> Subsección</p>} key="1" id="header-test" extra={  <img src={moreOpt} className="icon" alt="close" />}>
           </Panel>
         </Collapse>
@@ -50,7 +54,7 @@ class Test extends React.Component {
 
     items.push(
       <Panel header={<p className='subtitleOne'> Sección | Section | Partie </p>} key="3" extra={  <img src={moreOpt} className="icon" alt="close" />}>
-        <Collapse defaultActiveKey="1">
+        <Collapse>
           <Panel header={<p className='subtitleOne'> Subsección</p>} key="1" id="header-test" extra={  <img src={moreOpt} className="icon" alt="close" />}>
           </Panel>
         </Collapse>
@@ -95,4 +99,4 @@ class Test extends React.Component {
   }
 }
 
-export default Test
+export default Accordion
