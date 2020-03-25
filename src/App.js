@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-
+import Test from './AccordionPrueba.js'
 import FormBuilder from "./Organism/FormBuilder/FormBuilder.js"
 import TextBlockBuilder from "./Organism/TextBlockBuilder/TextBlockBuilder.js"
 
@@ -28,7 +28,7 @@ function App() {
   return (
     <div className="App">
       <div>
-        <FormBuilder />
+        <Test />
         <TextBlockBuilder />
       </div>
 
